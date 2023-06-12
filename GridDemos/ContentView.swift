@@ -8,14 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let data = (1...100).map {"item\($0)"}
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        let  coloms:[GridItem]=[
+            GridItem (.adaptive(minimum: 160, maximum: 250), spacing: 10, alignment: .center)
+        ]
+        NavigationView{
+            
+            ScrollView {
+                LazyVGrid(columns: coloms) {
+                    ForEach(data, id: \.self) { item in
+                        NavigationLink( destination: Text(item)){
+                      
+                            VStack {
+                                Text("The Due Point is 47 now")
+//                                Text(item)
+                            }
+                        }
+
+                    .padding()
+                    .background(.green)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                }
+                                        }
+                .navigationTitle("Grids")
+            }
         }
-        .padding()
     }
 }
 
