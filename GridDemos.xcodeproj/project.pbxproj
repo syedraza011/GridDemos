@@ -11,6 +11,7 @@
 		E9B533532A362F65007E6C0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B533522A362F65007E6C0F /* ContentView.swift */; };
 		E9B533552A362F6A007E6C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B533542A362F6A007E6C0F /* Assets.xcassets */; };
 		E9B533582A362F6A007E6C0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B533572A362F6A007E6C0F /* Preview Assets.xcassets */; };
+		E9FA54D02A3BB2ED00CEEEC6 /* appData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA54CF2A3BB2ED00CEEEC6 /* appData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E9B533522A362F65007E6C0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9B533542A362F6A007E6C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9B533572A362F6A007E6C0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9FA54CF2A3BB2ED00CEEEC6 /* appData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		E9B5334F2A362F65007E6C0F /* GridDemos */ = {
 			isa = PBXGroup;
 			children = (
+				E9FA54D12A3BB2F500CEEEC6 /* appData */,
 				E9B533502A362F65007E6C0F /* GridDemosApp.swift */,
 				E9B533522A362F65007E6C0F /* ContentView.swift */,
 				E9B533542A362F6A007E6C0F /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				E9B533572A362F6A007E6C0F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9FA54D12A3BB2F500CEEEC6 /* appData */ = {
+			isa = PBXGroup;
+			children = (
+				E9FA54CF2A3BB2ED00CEEEC6 /* appData.swift */,
+			);
+			path = appData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9B533532A362F65007E6C0F /* ContentView.swift in Sources */,
+				E9FA54D02A3BB2ED00CEEEC6 /* appData.swift in Sources */,
 				E9B533512A362F65007E6C0F /* GridDemosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
